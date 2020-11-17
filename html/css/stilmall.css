@@ -1,0 +1,293 @@
+body {
+  background: #f2f2f2;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  width: 100vw;
+}
+
+#wrapper {
+  min-height: 95vh;
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 10px;
+  -ms-grid-rows: 80px 70px auto 30px;
+      grid-template-rows: 80px 70px auto 30px;
+      grid-template-areas: "header" "nav" "content" "sidebar1"  "sidebar2" "footer";
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  background-color: #a5a5a5;
+  color: #fafafa;
+      grid-row-start: header;
+  grid-row-end: header;
+  text-align: center;
+}
+
+.loginPage main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginPage main .loginWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem;
+}
+
+.loginPage main .loginWindow form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginPage main .loginWindow form input {
+  margin-bottom: 1rem;
+}
+
+.loginPage main .loginWindow form label {
+  text-align: left;
+}
+
+.loginPage main .loginWindow a {
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 2.5em;
+  font-family: Verdana, arial;
+  text-align: center;
+  margin: 0;
+  line-height: 2;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+#sida3 #wrapper {
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
+  -ms-grid-rows: 80px 70px auto 30px;
+      grid-template-rows: 80px 70px auto 30px;
+      grid-template-areas: "header header" "nav nav" "content sidebar2" "footer footer";
+}
+
+#produkter #content {
+  margin: 0 auto;
+  width: 100%;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  -ms-grid-row: nav;
+      grid-row-start: nav;
+  grid-row-end: nav;
+  color: #f2f2f2;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#admin ul {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav li {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  border: 4px outset #323232;
+  background: white;
+  color: black;
+  height: 88%;
+  line-height: 2.3;
+}
+
+nav li:hover {
+  border: 4px inset #323232;
+}
+
+aside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: sidebar2;
+  text-align: right;
+  background-color: #a5a5a5;
+  color: #fafafa;
+  text-align: center;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background-color: #a5a5a5;
+  color: #fafafa;
+  -ms-grid-row: footer;
+      grid-row-start: footer;
+  grid-row-end: footer;
+  text-align: center;
+  line-height: 1.7;
+}
+
+#produkter h2, #sida3 h2, #admin h2 {
+  text-align: center;
+  color: black;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+section.productTable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*
+#produkter table{
+	width:90%;
+	border: 3px solid red;
+	border-collapse: collapse;
+	margin:0 auto;
+}
+
+#produkter thead{
+		font-size: 1.5em;
+}
+
+#produkter tbody{
+		font-size: 1.2em;
+}
+
+#produkter td, #produkter th{
+	border: 1px solid red;
+	padding-left:20px;
+}
+
+
+#produkter th:nth-child(1){
+	text-align: left;	
+}
+
+#produkter td:nth-child(3), #produkter td:nth-child(4), #produkter td:nth-child(5){
+	text-align: center;
+}
+
+#produkter table a:link, #produkter table a:visited, #produkter table a:focus, #produkter table a:active{
+	color:black;
+}
+
+#produkter table img{
+	height:60px;
+}
+*/
+#sida3 figure {
+  float: left;
+  height: 100px;
+}
+
+#sida3 figure img {
+  height: 100px;
+}
+
+#login main {
+  margin: auto;
+  width: 75%;
+  background-color: #f2f2f2;
+  color: black;
+  margin-bottom: 10px;
+}
+
+#login form {
+  color: #2f2f2f;
+}
+
+/*
+#login label{
+	 display:inline-block;
+		text-align:right;
+		padding-right:10px;
+		width:120px;
+}
+*/
+#login input[type="submit"], .create {
+  margin-left: 132px;
+}
+
+#login .create > a {
+  color: black;
+}
+
+#login h2 {
+  color: black;
+}
+/*# sourceMappingURL=stilmall.css.map */
