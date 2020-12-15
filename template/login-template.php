@@ -59,11 +59,9 @@
 					<a href="createUser.php">Create new user</a>
 				</section>
 			</main>
-
-    </div>
-    <?php
+		</div>
+    	<?php
 			require("footer.php");
 		?>
-
 	</body>
 </html>
